@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const RecipePage = () => {
   const recipe = {
-    title: "Manoa Chocolate Truffle Recipe",
-    description: "A delightful Hawaiian chocolate truffle recipe using locally sourced Manoa Chocolate. These truffles combine the rich flavors of Hawaiian cacao with a smooth, creamy texture.",
+    title: "Manoa Chocolate Cookie Bar",
+    description: "A delightful Hawaiian chocolate cookie bar recipe using Manoa Chocolate. These chocolate bars combine the rich flavors of Hawaiian cacao with a crunchy, creamy texture.",
     ingredients: [
       "8 oz Manoa dark chocolate, chopped",
       "1/2 cup heavy cream",
@@ -44,16 +44,25 @@ const RecipePage = () => {
             elevation={3}
             sx={{
               height: 400,
+              width: '100%',
               backgroundColor: '#f5f5f5',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              mb: 4
+              mb: 4,
             }}
           >
-            <Typography variant="h6" color="text.secondary">
-              Photo will be added here
-            </Typography>
+            <img
+              src={recipe.image}
+              alt={recipe.title}
+              style={{
+                maxHeight: '100%',
+                maxWidth: '100%',
+                height: 'auto',
+                width: 'auto',
+                objectFit: 'contain'
+              }}
+            />
           </Paper>
         </Box>
 
