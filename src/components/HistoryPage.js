@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './RecipePage.css'; // We'll create this CSS file for styles
+import './History.css'; // We'll create this CSS file for styles
 
 // SVGs for Print and Save
 const PrintSVG = () => (
@@ -10,7 +10,7 @@ const SaveSVG = () => (
   <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5v14l7-7 7 7V5a2 2 0 00-2-2H7a2 2 0 00-2 2z" /></svg>
 );
 
-const RecipePage = () => {
+const HistoryPage = () => {
   const recipe = {
     title: 'Manoa Chocolate Cookie Bar Recipe',
     description:
@@ -143,5 +143,5 @@ const RecipePage = () => {
   );
 };
 
-export default RecipePage;
+export default HistoryPage;
 
