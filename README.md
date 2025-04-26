@@ -1,4 +1,4 @@
-# Chocolate Treat Recipe
+# Manoa Chocolate Cookie Bar Recipe
 
 ## Getting Started
 
@@ -13,3 +13,5 @@ npm start
 ```
 
 3. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+#### LAIS 340 Final Project

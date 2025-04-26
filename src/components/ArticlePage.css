@@ -1,0 +1,98 @@
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.article-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.article-subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.article-meta {
+  font-size: 1rem;
+  color: #666;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-date::before {
+  content: "•";
+  margin-right: 1rem;
+}
+
+.article-content {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.article-section-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.5rem;
+  color: #222;
+}
+
+.article-paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.article-fact {
+  background: #f8f9fa;
+  border-left: 4px solid #2C3E50;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.article-fact h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem;
+  color: #2C3E50;
+}
+
+.article-fact p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .article-title {
+    font-size: 2rem;
+  }
+  
+  .article-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .article-content {
+    font-size: 1rem;
+  }
+  
+  .article-section-heading {
+    font-size: 1.5rem;
+  }
+}

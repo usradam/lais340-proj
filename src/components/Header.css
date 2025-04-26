@@ -1,0 +1,85 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-family: 'Georgia', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2C3E50;
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  gap: 0.5rem;
+  background: #f8f9fa;
+  padding: 0.25rem;
+  border-radius: 8px;
+}
+
+.header-tab {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s;
+  border-radius: 6px;
+}
+
+.header-tab:hover {
+  color: #2C3E50;
+}
+
+.header-tab.active {
+  color: #2C3E50;
+}
+
+.tab-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: -1;
+}
+
+.tab-text {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .header-nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
